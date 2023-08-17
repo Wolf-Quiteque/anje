@@ -1155,7 +1155,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #ffa587;
+  color: #fad600;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -1712,7 +1712,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #ff6b3b;
+  background: #fad600;
 }
 
 .blog .entry .entry-content h3 {
@@ -2285,7 +2285,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ff7e54;
+  background: #fad600;
   color: #fff;
   text-decoration: none;
 }

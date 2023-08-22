@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>ANJE -Blog</title>
+    <title>ANJE - Eventos</title>
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -46,6 +46,8 @@
   </head>
 
   <body>
+    <!-- ======= Top Bar ======= -->
+
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
@@ -76,68 +78,123 @@
         </div>
       </div>
     </header>
+    <!-- End Header -->
 
     <main id="main">
       <!-- ======= Breadcrumbs ======= -->
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Evento</li>
+            <li><a href="index.html">Início</a></li>
+            <li>Eventos</li>
           </ol>
-          <h2>Todo sonho tem um preço</h2>
+          <h2>Evento</h2>
         </div>
       </section>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slideone.jpg" alt="" />
-                  </div>
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-8 entries">
+              <article class="entry">
+                <div class="entry-img">
+                  <img
+                    src="assets/img/blog/blog-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
 
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slidetwo.jpg" alt="" />
-                  </div>
+                <h2 class="entry-title">
+                  <a href="blog-single.html">Todo Sonho Tem Um Preço</a>
+                </h2>
 
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slidethree.jpg" alt="" />
+                <div class="entry-meta">
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-single.html"
+                        ><time datetime="2020-01-01"
+                          >1/2 de Junho de 2023</time
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="entry-content">
+                  <p>
+                    Todo Sonho Tem Um Preço é uma conferência nacional de jovens
+                    empresários angolanos criada pela empresa Cumbi Group em
+                    2017 para incentivar e impulsionar jovens a investirem nos
+                    seus sonhos e projectos empresariais
+                  </p>
+                  <div class="read-more">
+                    <a href="evento.html">Ler Mais</a>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
+              </article>
 
-            <div class="col-lg-4">
-              <div class="portfolio-info">
-                <h3>Todo Sonho Tem um preço</h3>
-                <ul>
-                  <li><strong>data</strong>: 01 /02 de Junho</li>
-                  <li>
-                    <strong>Website</strong>:
-                    <a href="#">https://www.cumbigroup.com</a>
-                  </li>
+              <div class="blog-pagination">
+                <ul class="justify-content-center">
+                  <li class="active"><a href="#">1</a></li>
                 </ul>
               </div>
-              <div class="portfolio-description">
-                <h2>CONCEITO</h2>
-                <p>
-                  Todo Sonho Tem Um Preço é uma conferência nacional de jovens
-                  empresários angolanos criada pela empresa Cumbi Group em 2017
-                  para incentivar e impulsionar jovens a investirem nos seus
-                  sonhos e projectos empresariais
-                </p>
-              </div>
             </div>
+            <!-- End blog entries list -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <h3 class="sidebar-title">Pesquisar</h3>
+                <div class="sidebar-item search-form">
+                  <form action="">
+                    <input type="text" />
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+                <!-- End sidebar search formn-->
+
+                <h3 class="sidebar-title">Categorias</h3>
+                <div class="sidebar-item categories">
+                  <ul>
+                    <li>
+                      <a href="#">Geral <span>(1)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Marketing Digital <span>(12)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Governamental <span>(5)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Jovens Empresarios <span>(22)</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End sidebar categories-->
+
+                <h3 class="sidebar-title">Eventos Recentes</h3>
+                <div class="sidebar-item recent-posts">
+                  <div class="post-item clearfix">
+                    <img src="assets/img/pics/IMG-20230810-WA0007.jpg" alt="" />
+                    <h4>
+                      <a href="blog-single.html">Todo Sonho Tem Um Preço</a>
+                    </h4>
+                    <time datetime="2023-06-01">1/2 de Junho de 2020</time>
+                  </div>
+                </div>
+
+                <!-- End sidebar tags-->
+              </div>
+              <!-- End sidebar -->
+            </div>
+            <!-- End blog sidebar -->
           </div>
         </div>
       </section>
-      <!-- End Portfolio Details Section -->
+      <!-- End Blog Section -->
     </main>
     <!-- End #main -->
 

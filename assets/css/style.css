@@ -397,6 +397,222 @@ h6 {
   display: block;
 }
 
+#galeria {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/pics/IMG-20230809-WA0020.jpg") center top;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+
+#galeria:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#galeria .container {
+  z-index: 2;
+}
+
+#galeria h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#galeria h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#galeria .get-started-icon {
+  font-size: 24px;
+  background: #000;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#galeria .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #584b48;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+}
+
+#galeria .btn-get-started:hover {
+  background: #000;
+}
+
+@media (min-width: 1024px) {
+  #galeria {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1024px), (max-height: 768px) {
+  #galeria {
+    margin-bottom: -150px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #galeria {
+    height: 80vh;
+  }
+
+  #galeria h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #galeria h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 640px) {
+  #galeria {
+    height: 120vh;
+  }
+}
+
+/*-------------------------------------------------------
+#Sobre section
+/********************************************
+--------------------------------------------------------------*/
+#sobre {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/pics/sobrehero.jpeg") center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+
+#sobre:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#sobre .container {
+  z-index: 2;
+}
+
+#sobre h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#sobre h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#sobre .get-started-icon {
+  font-size: 24px;
+  background: #000;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#sobre .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #584b48;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+}
+
+#sobre .btn-get-started:hover {
+  background: #000;
+}
+
+@media (min-width: 1024px) {
+  #sobre {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1024px), (max-height: 768px) {
+  #sobre {
+    margin-bottom: -150px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #sobre {
+    height: 80vh;
+  }
+
+  #sobre h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #sobre h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 640px) {
+  #sobre {
+    height: 120vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -711,6 +927,12 @@ section {
 
 .about .video-box {
   background: url("../img/about-img.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.sboreing .video-box {
+  background: url("../img/pics/IMG-20230810-WA0025.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }

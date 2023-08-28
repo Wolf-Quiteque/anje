@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>ANJE -Blog</title>
+    <title>ANJE - Incrição</title>
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -46,6 +46,8 @@
   </head>
 
   <body>
+    <!-- ======= Top Bar ======= -->
+
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
@@ -62,7 +64,7 @@
             <li><a href="eventos.html">Eventos</a></li>
             <li><a href="galeria.html">Galeria</a></li>
 
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -76,68 +78,124 @@
         </div>
       </div>
     </header>
+    <!-- End Header -->
 
     <main id="main">
       <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Evento</li>
-          </ol>
-          <h2>Todo sonho tem um preço</h2>
-        </div>
-      </section>
+
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details">
+      <!-- ======= Blog Section ======= -->
+      <section id="contacto" class="contact">
         <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slideone.jpg" alt="" />
-                  </div>
+          <div class="section-title">
+            <h2 data-aos="fade-up">Contacto</h2>
+          </div>
 
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slidetwo.jpg" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/pics/slidethree.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
+          <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Endereço</h3>
+                <p>
+                  Lar do patriota , rua do hotel patriota ,edifício tchianda
+                </p>
               </div>
             </div>
 
-            <div class="col-lg-4">
-              <div class="portfolio-info">
-                <h3>Todo Sonho Tem um preço</h3>
-                <ul>
-                  <li><strong>data</strong>: 01 /02 de Junho</li>
-                  <li>
-                    <strong>Website</strong>:
-                    <a href="#">https://www.cumbigroup.com</a>
-                  </li>
-                </ul>
+            <div
+              class="col-xl-3 col-lg-4 mt-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>Email</h3>
+                <p>geral@anjeangola.com</p>
               </div>
-              <div class="portfolio-description">
-                <h2>CONCEITO</h2>
-                <p>
-                  Todo Sonho Tem Um Preço é uma conferência nacional de jovens
-                  empresários angolanos criada pela empresa Cumbi Group em 2017
-                  para incentivar e impulsionar jovens a investirem nos seus
-                  sonhos e projectos empresariais
-                </p>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 mt-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="info-box">
+                <i class="bx bx-phone-call"></i>
+                <h3>Ligue</h3>
+                <p>(+244) 929 558 555/ 927 254 444</p>
               </div>
+            </div>
+          </div>
+
+          <div
+            class="row justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="col-xl-9 col-lg-12 mt-4">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Seu Nome"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Seu Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Assunto"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Portfolio Details Section -->
+      <!-- End Blog Section -->
     </main>
     <!-- End #main -->
 

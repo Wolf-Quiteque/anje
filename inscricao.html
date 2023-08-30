@@ -110,12 +110,12 @@
           >
             <div class="col-xl-9 col-lg-12 mt-4">
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="row">
+  hx-post="/api/submit" 
+  hx-target="#form-container" 
+  method="post"
+  role="form"
+  class="php-email-form"
+>                <div class="row">
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
@@ -192,13 +192,15 @@
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">
-                    Your message has been sent. Thank you!
+                    Enviado com sucesso!
                   </div>
                 </div>
                 <div class="text-center">
                   <button type="submit">Enviar</button>
                 </div>
               </form>
+              
+              <div id="form-container"></div>
             </div>
           </div>
         </div>
@@ -217,11 +219,9 @@
           </div>
         </div>
         <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550670396095" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/anje.angola?igshid=MmU2YjMzNjRlOQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/anje-angola/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
     </footer>

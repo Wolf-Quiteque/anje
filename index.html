@@ -14,6 +14,37 @@
       name="keywords"
     />
     
+    <link rel="stylesheet" href="assets/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owl/owl.theme.default.min.css">
+
+<style>body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+#imageSection {
+  height: 100vh; /* Make the section take the full viewport height */
+  overflow: hidden; /* Hide the overflow to prevent scrollbars */
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(100%); /* Initially position images outside the viewport */
+  transition: transform 0.8s ease-out; /* Add a smooth transition effect */
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+</style>
+   
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,7 +83,19 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+<style>
+  @media (max-width: 767px) {
+    #hero{
+      margin-top: -150px;
+    }
+  .owl-carousel .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
 
+</style>
     <!-- =======================================================
   * Template Name: Flexor
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -95,7 +138,7 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
+    <!-- ======= Hero Section ======= 
     <section
       id="hero"
       class="d-flex flex-column justify-content-center align-items-center"
@@ -111,8 +154,30 @@
           <a style="color: #fad600;" href="https://portal-eta-eight.vercel.app/inscricao" class="btn-get-started scrollto">Seja Membro</a>
         </div>
       </div>
-    </section>
+    </section>-->
     <!-- End Hero -->
+    <section
+    id="hero"
+    class="d-flex flex-column justify-content-center align-items-center"
+  >
+      <div class="owl-carousel owl-theme">
+        <!-- <div class="item">
+          <img src="assets/img/pics/IMG-20230829-WA0012.jpg" alt="Slide 1" class="img-fluid">
+          <div class="carousel-caption">
+ 
+          </div>
+        </div> -->
+        <div class="item">
+          <img src="assets/img/new/staff.jpeg" alt="Slide 1" class="img-fluid">
+          <div class="carousel-caption">
+  
+          </div>
+        </div>
+  
+     
+  </div>
+  </section>
+    
 
     <main id="main">
       <!-- ======= Why Us Section ======= -->
@@ -179,12 +244,18 @@
       <!-- End Why Us Section -->
 
       <section
+      class="container"
     >
-    <img
-    src="assets/img/blog/cumbi.jpeg"
-    class="img-fluid"
-    alt=""
-  />
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">    <img
+        src="assets/img/new/quote1.jpeg"
+        class="img-fluid"
+        alt=""
+      /></div>
+      <div class="col-md-2"></div>
+    </div>
+
       
       </div>
     </section>
@@ -230,7 +301,8 @@
         </div>
       </section>
       <!-- End About Section -->
-
+      
+   
       <!-- ======= Clients Section ======= -->
       <section id="clients" class="clients">
         <div class="container" data-aos="fade-up">
@@ -430,14 +502,15 @@
       <!-- End Values Section -->
 
       <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials">
-        <div class="container position-relative text-center" data-aos="fade-up">  
-          <h1 style="color:#fad600">ANJE</h1>
-          <h2 style="color:white">Estamos comprometidos em <span style="color: #fad600;">capacitar os jovens</span>  a se tornarem <span style="color: #fad600;">Empresários bem-sucedidos</span>, fornecendo suporte, orientação e recursos para transformar suas ideias em <span style="color: #fad600;">negócios prósperos.</span> </h2>
-           
-          </div>
-        
-      </section>
+      <div class="row mb-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">    <img
+          src="assets/img/new/quote2.jpeg"
+          class="img-fluid"
+          alt=""
+        /></div>
+        <div class="col-md-2"></div>
+      </div>
       <!-- End Testimonials Section -->
 
       <!-- ======= Portfolio Section ======= -->
@@ -452,36 +525,35 @@
           <div class="row">
             <div class="col-lg-12 entries">
              <div class="row">
-                <div class="col-md-4">
+
+              <div class="col-md-4">
                   <article class="entry" style=" background-color: white">
                     <div class="entry-img">
                       <img
-                        src="assets/img/blog/blog-1.jpg"
+                        src="assets/img/new/marketingEncontro.jpeg"
                         alt=""
+                      
                         class="img-fluid"
-                        
+                        style="height:250px"
                       />
                     </div>
     <div style=" background-color: white">
                     <h2 class="entry-title" style="font-size: 15px; color: black;">
-                      <a href="evento.html">Todo Sonho Tem um preço</a
+                      <a href="#">Reunião Com a equipa de Communicação & Marketing da ANJE-Angola</a
                       ><br>
-                      <span style="font-size: x-small;">01 - 02 Julho de 2023</span>
-                    </h2>
+                      <span style="font-size: x-small;">18 Septembro 2023</span>
+                    </h2> 
     
                  
     
                     <div class="entry-content">
-                      <p >
-                        Todo Sonho Tem Um Preço é uma conferência....
-                      </p>
+                    
                       <div class="read-more">
-                        <a href="evento.html">Ler Mais</a>
+                        <a href="#">Ler Mais</a>
                       </div>
                     </div></div>
                   </article>
                 </div>
-
                 <div class="col-md-4">
                   <article class="entry" style=" background-color: white">
                     <div class="entry-img">
@@ -490,7 +562,7 @@
                         alt=""
                       
                         class="img-fluid"
-                        
+                        style="height:250px"
                       />
                     </div>
     <div style=" background-color: white">
@@ -503,45 +575,47 @@
                  
     
                     <div class="entry-content">
-                      <p >
-                        Plano anual de atividades da ANJE ANGOLA para 2024 apresentado a coordenação naciona
-                      </p>
+                    
                       <div class="read-more">
                         <a href="#">Ler Mais</a>
                       </div>
                     </div></div>
                   </article>
                 </div>
-
-                <div class="col-md-4">
+                   <div class="col-md-4">
                   <article class="entry" style=" background-color: white">
                     <div class="entry-img">
                       <img
-                        src="assets/img/blog/taga.jpeg"
+                        src="assets/img/new/benguela.jpeg"
                         alt=""
+                      
                         class="img-fluid"
-                        
+                        style="height:250px"
                       />
                     </div>
     <div style=" background-color: white">
                     <h2 class="entry-title" style="font-size: 15px; color: black;">
-                      <a href="evento.html">Todo Sonho Tem um preço</a
+                      <a href="#">𝐎 𝐏𝐫𝐞𝐬𝐢𝐝𝐞𝐧𝐭𝐞 𝐝𝐚 𝐀𝐍𝐉𝐄-𝐀𝐧𝐠𝐨𝐥𝐚 𝐂𝐮𝐦𝐛𝐢 𝐉𝐮𝐧𝐢𝐨𝐫 𝐭𝐫𝐚𝐛𝐚𝐥𝐡𝐚 𝐧𝐚 𝐩𝐫𝐨𝐯í𝐧𝐜𝐢𝐚 𝐝𝐞 𝐁𝐞𝐧𝐠𝐮𝐞𝐥𝐚
+                        </a
                       ><br>
-                      <span style="font-size: x-small;">01 - 02 Julho de 2023</span>
+                      <span style="font-size: x-small;">12/13 Outubro 2023</span>
                     </h2>
     
                  
     
                     <div class="entry-content">
-                      <p >
-                        Todo Sonho Tem Um Preço é uma conferência....
-                      </p>
+                    
                       <div class="read-more">
-                        <a href="evento.html">Ler Mais</a>
+                        <a href="#">Ler Mais</a>
                       </div>
                     </div></div>
                   </article>
                 </div>
+               
+
+                
+
+              
 
 
 
@@ -978,6 +1052,62 @@
     </div>
 
 
+          <div
+      class="col-lg-3 col-md-6 d-flex align-items-stretch"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <div class="member">
+        <div class="member-img">
+          <img
+            src="assets/img/team/team-17.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>Jesus Falcão</h4>
+          <span>Secretário Nacional para Finanças</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div
+    class="col-lg-3 col-md-6 d-flex align-items-stretch"
+    data-aos="fade-up"
+    data-aos-delay="300"
+  >
+    <div class="member">
+      <div class="member-img">
+        <img
+          src="assets/img/team/team-17.jpg"
+          class="img-fluid"
+          alt=""
+        />
+        <div class="social">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="member-info">
+        <h4>Jesus Falcão</h4>
+        <span>Secretário Nacional para Finanças</span>
+      </div>
+    </div>
+  </div>
+
+
+
 
              <!-- <div
             class="col-lg-3 col-md-6 d-flex align-items-stretch"
@@ -1294,14 +1424,60 @@
     ></a>
 
     <!-- Vendor JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
+    <script src="assets/owl/owl.carousel.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function() {
+  const imageContainers = document.querySelectorAll(".image-container");
+
+  function handleScroll() {
+    imageContainers.forEach((container, index) => {
+      const rect = container.getBoundingClientRect();
+      if (rect.left <= window.innerWidth) {
+        container.style.transform = "translateX(0)";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleScroll);
+});
+</script>
+    <script>
+      $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  nav: true,
+  items: 1, // Set the number of items to display, in this case, 1 for a single fullscreen item
+  autoHeight: true, // Adjust the height based on the content
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+
+
+
+
+
+    </script>
   </body>
 </html>

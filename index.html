@@ -676,10 +676,7 @@
             <!-- End blog sidebar -->
           </div>
 
-          <div class="col-md-12 text-center">
-     
-            <button class="btn btn-sm" style="background-color: #fad600;">Ver Mais</button>
-           </div>
+       
         </div>
       </section>
 
@@ -694,13 +691,13 @@
         <div class="container">
           <div class="section-title">
             <h2 data-aos="fade-up">Liderança</h2>
-     
           </div>
+          
+          <!-- Slider Section -->
           <div class="lideres-slider swiper">
             <div class="swiper-wrapper align-items-center">
-             
               <script>
-                for (let i = 1; i <= 35; i++) {
+                for (let i = 1; i <= 8; i++) {
                   document.write(`
                     <div class="swiper-slide">
                       <div class="member">
@@ -712,13 +709,45 @@
                   `);
                 }
               </script>
-              
             </div>
-            <div class="swiper-pagination" ></div>
+            <div class="text-center">
+              <button class="btn btn-warning btn-sm btnvermais" onclick="showAllMembers()">ver mais</button>
+            </div>
           </div>
-        
+      
+          <!-- All Members Section -->
+          <div class="row all-members" style="display: none;">
+            <script>
+              for (let i = 1; i <= 35; i++) {
+                document.write(`
+                  <div class="col-md-4 mb-2">
+                    <img src="assets/img/pics/membros/${i}.png" class="img-fluid" alt="" />
+                  </div>
+                `);
+              }
+            </script>
+            <div class="text-center mt-3">
+              <button class="btn btn-warning btn-sm btnvermenos" onclick="showLess()">ver menos</button>
+            </div>
+          </div>
         </div>
+        <script>
+          function showAllMembers() {
+            document.querySelector('.lideres-slider').style.display = 'none';
+            document.querySelector('.all-members').style.display = 'flex';
+
+
+          }
+      
+          function showLess() {
+             document.querySelector('.all-members').style.display = 'none';
+            document.querySelector('.lideres-slider').style.display = 'flex';
+            document.querySelector('.btnvermenos').style.display = 'none';
+            document.querySelector('.btnvermais').style.display = 'block';
+          }
+        </script>
       </section>
+      
       <!-- End Team Section -->
 
       

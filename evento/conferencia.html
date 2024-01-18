@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="robots" content="noindex, follow">
 
-       
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -40,105 +39,99 @@
                 <img src="images/registration-form-5.jpg" alt="">
             </div>
             <form id="registrationForm">
-                    <h3>Inscreve-se<br>na Anje </h3>
-                 
-                  
-                    <div class="form-wrapper">
-                    <label for  class="label-input">Nome Completo</label>
+                <h3>Inscreve-se<br>na Anje</h3>
+                <div class="form-wrapper">
+                    <label for="nome" class="label-input">Nome Completo</label>
                     <input name="nome" type="text" class="form-control" required>
-                    </div>
-                    <div class="form-wrapper">
-                        <label for class="label-input">Empresa</label>
-                        <input name="empresa" type="text" class="form-control" placeholder="opcional"> 
-                        </div>
-                        <div class="form-wrapper">
-                            <label for class="label-input">Cargo</label>
-                            <input name="cargo" type="text" class="form-control" placeholder="opcional">
-                            </div>
-                    <div class="form-wrapper form-select">
-                        <label for>Participantes</label>
-                        <div class="form-holder">
-                        <select  class="form-control">
-                        <option value="1" class="option">1</option>
-                        <option value="2" class="option">2</option>
-                        <option value="3" class="option">3</option>
+                </div>
+                <div class="form-wrapper">
+                    <label for="empresa" class="label-input">Empresa</label>
+                    <input name="empresa" type="text" class="form-control" placeholder="opcional">
+                </div>
+                <div class="form-wrapper">
+                    <label for="cargo" class="label-input">Cargo</label>
+                    <input name="cargo" type="text" class="form-control" placeholder="opcional">
+                </div>
+                <div class="form-wrapper form-select">
+                    <label for="participantes">Participantes</label>
+                    <div class="form-holder">
+                        <select name="participantes" class="form-control">
+                            <option value="1" class="option">1</option>
+                            <option value="2" class="option">2</option>
+                            <option value="3" class="option">3</option>
                         </select>
                         <i class="zmdi zmdi-chevron-down"></i>
-                        </div>
-                        </div>
-                    
-                    <div class="form-wrapper">
-                    <label for class="label-input">Email</label>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <label for="email" class="label-input">Email</label>
                     <input name="email" type="text" class="form-control" required>
-                    </div>
-                    <div class="form-wrapper">
-                    <label for class="label-input">Telefone</label>
+                </div>
+                <div class="form-wrapper">
+                    <label for="contacto" class="label-input">Telefone</label>
                     <input name="contacto" type="text" class="form-control" placeholder="ex: 92569.." required>
-                    </div>
-                    <div class="form-wrapper">
-                        <label for class="label-input">Senha</label>
-                        <input name="password" type="text" class="form-control" required>
-                        </div>
-                        <button id="submitButton" onclick="submitForm()">
-                            <span id="loader" style="display: none;">Aguarde!...</span>
-                            <span>Inscreve-se</span>
-                        </button>
-                    </form>
+                </div>
+                <div class="form-wrapper">
+                    <label for="password" class="label-input">Senha</label>
+                    <input name="password" type="text" class="form-control" required>
+                </div>
+                <button id="submitButton" onclick="submitForm()">
+                    <span id="loader" style="display: none;">Aguarde!...</span>
+                    <span>Inscreve-se</span>
+                </button>
             </form>
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-          function toggleButton(isLoading) {
-        var button = document.getElementById("submitButton");
-        var loader = document.getElementById("loader");
+        function toggleButton(isLoading) {
+            var button = document.getElementById("submitButton");
+            var loader = document.getElementById("loader");
 
-        button.disabled = isLoading; // Disable/Enable the button
-        loader.style.display = isLoading ? "inline-block" : "none"; // Show/Hide the loader
-    }
-           document.getElementById("registrationForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
+            button.disabled = isLoading; // Disable/Enable the button
+            loader.style.display = isLoading ? "inline-block" : "none"; // Show/Hide the loader
+        }
 
-        // Disable the button and show loader
-        toggleButton(true);
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
 
-        // Call the custom function to handle form submission
-        submitForm();
-    });
+            // Disable the button and show loader
+            toggleButton(true);
 
+            // Call the custom function to handle form submission
+            submitForm();
+        });
 
         function submitForm() {
-        var form = document.getElementById("registrationForm");
-        var formData = new FormData(form);
-        var jsonData = {};
+            var form = document.getElementById("registrationForm");
+            var formData = new FormData(form);
+            var jsonData = {};
 
-        // Convert FormData to JSON
-        formData.forEach(function(value, key){
-            jsonData[key] = value;
-        });
+            // Convert FormData to JSON
+            formData.forEach(function(value, key) {
+                jsonData[key] = value;
+            });
 
-        $.ajax({
-            type: "POST",
-            url: "https://iddias-api-sehk.vercel.app/api/anje/register",
-            data: JSON.stringify(jsonData),
-            contentType: "application/json",
-            success: function (response) {
-                toggleButton(false);
-                if (response.message === "success") {
-                    alert("Obrigado por se registar. Por favor, faça login na sua conta para ter acesso ao evento.");
-                } else {
-                    alert("Este email já existe. Por favor, verifique o seu email ou entre em contacto com o suporte.");
+            $.ajax({
+                type: "POST",
+                url: "https://iddias-api-sehk.vercel.app/api/anje/register",
+                data: JSON.stringify(jsonData),
+                contentType: "application/json",
+                success: function(response) {
+                    toggleButton(false);
+                    if (response.message === "success") {
+                        alert("Obrigado por se registar. Por favor, faça login na sua conta para ter acesso ao evento.");
+                    } else {
+                        alert("Este email já existe. Por favor, verifique o seu email ou entre em contacto com o suporte.");
+                    }
+                },
+                error: function() {
+                    toggleButton(false);
+                    alert("Houve um erro! Por favor, tente novamente.");
                 }
-            },
-            error: function () {
-                toggleButton(false);
-                alert("Houve um erro! Por favor, tente novamente.");
-            }
-        });
-
-      
-    }
+            });
+        }
     </script>
 </body>
 </html>

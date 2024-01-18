@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RegistrationForm_v5 by Colorlib</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-design-iconic-font@2.2.0/css/material-design-iconic-font.min.css">
+
+<style>@font-face {
+    font-family: 'Arvo-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKmSAu.ttf') format('truetype');
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Arvo-Regular";
+    font-size: 15px;
+    margin: 0; }
+  
+  p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0; }
+  
+  img {
+    max-width: 100%; }
+  
+  ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+  
+  a {
+    text-decoration: none; }
+    a:hover {
+      text-decoration: none; }
+  
+  textarea {
+    resize: none; }
+  
+  :focus {
+    outline: none; }
+  
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/bg-registration-form-5.jpg") no-repeat;
+    background-size: cover; }
+  
+  .inner {
+    min-width: 850px;
+    margin: auto;
+    display: flex; }
+  
+  .image-holder {
+    width: 50%;
+    max-height: 550px; }
+  
+  .option {
+    color: #999;
+    text-align: center;
+    width: 30px; }
+  
+  form {
+    width: 50%;
+    background: #050262;
+    padding-top: 63px;
+    padding-left: 49px;
+    padding-right: 50px; }
+  
+  h3 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 38px;
+    color: #f78582; }
+  
+  .form-wrapper {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; }
+    .form-wrapper label {
+      width: 32.92%; }
+      .form-wrapper label.label-input {
+        transform: translateY(5px); }
+      .form-wrapper label.label-comment {
+        transform: translateY(-18px); }
+    .form-wrapper.form-select {
+      margin-bottom: 10px; }
+    .form-wrapper.form-price {
+      margin-bottom: 19px; }
+  
+  .form-holder {
+    position: relative; }
+    .form-holder i {
+      position: absolute;
+      transform: translateY(-21px);
+      left: 22px; }
+  
+  .form-control {
+    width: 67.08%;
+    height: 25px;
+    display: block;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid #6967a1;
+    background: none;
+    color: #fff;
+    padding: 0; }
+  
+  input:focus, textarea:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+  
+  select.form-control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 30px;
+    border: none;
+    font-size: 15px;
+    transform: translateY(-1px); }
+  
+  button {
+    height: 42px;
+    width: 191px;
+    display: inline-flex;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-image: -moz-linear-gradient(top, #cb6e7a 0%, #be6779 12%, #ae5e77 23%, #42236b 78%, #321a69 88%, #251368 100%);
+    /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(top, #cb6e7a 0%, #be6779 12%, #ae5e77 23%, #42236b 78%, #321a69 88%, #251368 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, #cb6e7a 0%, #be6779 12%, #ae5e77 23%, #42236b 78%, #321a69 88%, #251368 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    button:hover {
+      background-size: 200% auto;
+      background-position: right center; }
+  
+  @media (max-width: 991px) {
+    .inner {
+      min-width: auto; }
+  
+    form {
+      padding-top: 30px;
+      padding-bottom: 33px; }
+  
+    .image-holder {
+      max-height: 490px; } }
+  @media (max-width: 767px) {
+    .inner {
+      display: block; }
+  
+    form {
+      width: 100%; }
+  
+    .image-holder {
+      width: 100%; }
+  
+    form {
+      padding: 50px 20px; }
+  
+    .wrapper {
+      background: none; } }
+  
+  /*# sourceMappingURL=style.css.map */</style>
+<style></style>
+</head>
+<body>
+<div class="wrapper">
+<div class="inner">
+<form action>
+<h3>Set The Event</h3>
+<div class="form-wrapper form-price">
+<label for>Price</label>
+<span>$270</span>
+</div>
+<div class="form-wrapper form-select">
+<label for>People</label>
+<div class="form-holder">
+<select name id class="form-control">
+<option value="1" class="option">1</option>
+<option value="2" class="option">2</option>
+<option value="3" class="option">3</option>
+<option value="4" class="option">4</option>
+<option value="5" class="option">5</option>
+<option value="6" class="option">6</option>
+<option value="7" class="option">7</option>
+<option value="8" class="option">8</option>
+<option value="9" class="option">9</option>
+<option value="10" class="option">10</option>
+</select>
+<i class="zmdi zmdi-chevron-down"></i>
+</div>
+</div>
+<div class="form-wrapper">
+<label for class="label-input">Name</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-wrapper">
+<label for class="label-input">Mail</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-wrapper">
+<label for class="label-input">Phone</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-wrapper">
+<label for class="label-comment">Comment</label>
+<textarea name id class="form-control" style="height: 69px"></textarea>
+</div>
+<button>Send your booking</button>
+</form>
+<div class="image-holder">
+<img src="https://colorlib.com/etc/regform/colorlib-regform-21/images/registration-form-5.jpg" alt>
+</div>
+</div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+</script>
+</body>
+</html>

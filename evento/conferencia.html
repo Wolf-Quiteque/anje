@@ -88,37 +88,37 @@
         function toggleButton(isLoading) {
             var button = document.getElementById("submitButton");
             var loader = document.getElementById("loader");
-
+    
             button.disabled = isLoading; // Disable/Enable the button
             loader.style.display = isLoading ? "inline-block" : "none"; // Show/Hide the loader
         }
-
-        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent default form submission
-
+    
             // Disable the button and show loader
             toggleButton(true);
-
+    
             // Call the custom function to handle form submission
             submitForm();
         });
-
+    
         function submitForm() {
             var form = document.getElementById("registrationForm");
             var formData = new FormData(form);
             var jsonData = {};
-
+    
             // Convert FormData to JSON
-            formData.forEach(function(value, key) {
+            formData.forEach(function (value, key) {
                 jsonData[key] = value;
             });
-
+    
             $.ajax({
                 type: "POST",
                 url: "https://iddias-api-sehk.vercel.app/api/anje/register",
                 data: JSON.stringify(jsonData),
                 contentType: "application/json",
-                success: function(response) {
+                success: function (response) {
                     toggleButton(false);
                     if (response.message === "success") {
                         alert("Obrigado por se registar. Por favor, faça login na sua conta para ter acesso ao evento.");
@@ -126,7 +126,7 @@
                         alert("Este email já existe. Por favor, verifique o seu email ou entre em contacto com o suporte.");
                     }
                 },
-                error: function() {
+                error: function () {
                     toggleButton(false);
                     alert("Houve um erro! Por favor, tente novamente.");
                 }

@@ -45,6 +45,10 @@
     background-color: #8e7839; /* Darker shade on hover */
 }
 
+#passwordDisplay {
+    font-style: italic;
+}
+
     </style>
     <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -93,7 +97,8 @@
                 </div>
                 <div class="form-wrapper">
                     <label for="password" class="label-input">Cria uma senha</label>
-                    <input autocapitalize="none" autocomplete="off" name="password" type="text" class="form-control" required>
+                    <input id="passwordInput" type="password" class="form-control" required>
+                    <div id="passwordDisplay" ></div>
                 </div>
                 <button id="submitButton" >
                     <span id="loader" style="display: none;">Aguarde!...</span>
@@ -162,6 +167,13 @@
                 }
             });
         }
+
+        var passwordInput = document.getElementById('passwordInput');
+var passwordDisplay = document.getElementById('passwordDisplay');
+
+passwordInput.addEventListener('input', function () {
+    passwordDisplay.textContent = passwordInput.value;
+});
     </script>
 </body>
 </html>

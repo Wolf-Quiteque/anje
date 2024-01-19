@@ -111,7 +111,7 @@
                 </div>
                 <div class="form-wrapper">
                     <label for="password" class="label-input">Cria uma senha</label>
-                    <input id="passwordInput" type="password" class="form-control" required>
+                    <input id="passwordInput" name="password" type="password" class="form-control" required>
                     <div id="passwordDisplay" ></div>
                 </div>
                 <button id="submitButton" >
@@ -175,12 +175,13 @@
                         alert("Este email já existe. Por favor, verifique o seu email ou entre em contacto com o suporte.");
                     }
                 },
-                error: function () {
+                error: function (error) {
                     toggleButton(false);
+                    console.log(error)
                     alert("Houve um erro! Por favor, tente novamente.");
                 }
             });
-        }
+        }aaa
 
         var passwordInput = document.getElementById('passwordInput');
 var passwordDisplay = document.getElementById('passwordDisplay');

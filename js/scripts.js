@@ -297,8 +297,8 @@ function initGmag() {
         if (swra.hasClass("isShare")) showShare();
         else hideShare();
     });
-    $(".show-reg-form").on("click", function () {
-        showModal();
+  $(".show-reg-form").on("click", function() {
+      window.location.href = "https://portal-eta-eight.vercel.app/inscricao";
     });
     function showModal() {
         $(".main-register-container").fadeIn(1);

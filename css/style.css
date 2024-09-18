@@ -3837,7 +3837,7 @@ section {
     background-attachment: scroll;
     background-position: right;
     background-origin: content-box;
-	background-image: url("../images/city-bg.png");
+	background-image: url("../image/images/city-bg.png");
 	opacity: 0.6;
 	z-index: 1;
 }
